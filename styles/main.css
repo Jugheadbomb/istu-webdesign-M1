@@ -1,0 +1,156 @@
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+i {
+	color: #3399ff;
+	margin: 0 5px;
+}
+
+li {
+	list-style: none;
+	margin: 20px 0;
+	width: 100%;
+	line-height: 1.4em;
+	transition: 0.5s;
+}
+
+p, li {
+	line-height: 1.4em;
+	letter-spacing: 0.08em;
+	flex-grow: 4;
+    flex-basis: 0;
+}
+
+.body {
+	margin: 0;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.photo {
+	width: 90%;
+	height: 90%;
+	margin: auto;
+}
+
+.title {
+	text-align: center;
+	font-size: 2em;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+.sub-title {
+	font-size: 1em;
+	font-weight: 400;
+	color: gray;
+	line-height: 1em;
+}
+
+/* Main container */
+.container {
+	width: 100%;
+	position: relative;
+}
+
+.container .section_left {
+	width: 25%;
+	padding: 20px;
+	height: 1000px;
+	background: #1b2631;
+	color: #fff;
+}
+
+.container .section_left img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: auto;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container .section_left .textlabel {
+	color: #3399ff;
+	font-weight: 700;
+	font-size: 0.8em;
+	display: block;
+	margin: 10px 0;
+}
+
+.container .section_right {
+	padding: 30px;
+	width: 75%;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.container .skills_block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container .skills_block .skill_card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    min-height: 300px;
+    margin: 15px;
+
+    box-shadow: 0 0 15px #3399ff;
+    border-radius: 20px 20px;
+    transition: 0.5s ease-in-out;
+    padding: 15px;
+	padding-top: 40px;
+    font-size: large;
+}
+
+.container .skills_block .skill_card .image {
+	width: 55%;
+	height: 55%;
+	margin: auto;
+}
+
+.container .progress_container {
+	width: 90%;
+	height: 10px;
+	border-radius: 20px;
+	background: #1e1e1e;
+}
+
+.container .relativelist {
+	position: relative;
+	left: -40px;
+	width: 100%;
+}
+
+.container .progress_container .progress_bar {
+	background: #3399ff;
+	border-radius: 20px;
+	height: 10px;
+}
+
+@media (max-width:920px) {
+	.container .section_left {
+		width: 100%;
+		display: block;
+	}
+
+	.container .section_right {
+		width: 100%;
+		position: static;
+		display: block;
+	}
+}
